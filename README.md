@@ -13,9 +13,8 @@ Create Physical Standby Database and configure Data Guard Broker - 19c
 ## Oracle DBA - Automation with Ansible (Create a Physical Standby Database and Data Guard Broker Setup)
 
 **Summary Steps:** 
-### 1: Create a primary Database using ansible [- - completed before] 
- * Please check below link - 
- * [Create Oracle container database and pluggable database](https://https://github.com/asiandevs/Oracle_CDBnPDB_19c)  
+### 1: Create a primary Database using ansible 
+
  
 ### 2: Create a physical standby database
  * Enable force logging
@@ -35,15 +34,7 @@ Create Physical Standby Database and configure Data Guard Broker - 19c
 ### Validation - Check with SQLPLUS and DGMGRL command line utility     
 
 ## Ansible commands Summary: 
-1. Clone this repository:
- * git clone https://github.com/asiandevs/OracleDBAwithAnsible
 
-2. Define variables as per your own setup or requirements:
- * [ Modify main.yml file under vars directory ]
- 
-3. Configure an Ansible inventory file (example as below) 
- * git clone https://github.com/asiandevs/OracleDBAwithAnsible
-- Configure an Ansible inventory file (example as below) 
 ```javascript
 cat ansible.cfg | grep inventory
           inventory = ./inventory
@@ -307,5 +298,3 @@ PLAY RECAP *********************************************************************
 
 ```
 
-> I hope you can play with Ansible for doing different daily activities.
-> Thanks for checking this out. Any advise welcome !! :smile: :heart:
